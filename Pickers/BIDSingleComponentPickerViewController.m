@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Grey Matter. All rights reserved.
 //
 
-#import "BIDSingleComponentViewController.h"
+#import "BIDSingleComponentPickerViewController.h"
 
 @interface BIDSingleComponentViewController ()
 

@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Grey Matter. All rights reserved.
 //
 
-#import "BIDDoubleComponentViewController.h"
+#import "BIDDoubleComponentPickerViewController.h"
 
 @interface BIDDoubleComponentViewController ()
 

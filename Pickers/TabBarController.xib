@@ -16,30 +16,30 @@
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-            <tabBar key="tabBar" contentMode="scaleToFill" selectedItem="gvV-1l-gkM" id="m9r-NB-Dxu">
+            <tabBar key="tabBar" contentMode="scaleToFill" id="m9r-NB-Dxu">
                 <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tabBar>
             <viewControllers>
-                <viewController id="ast-aP-Zaz">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="gvV-1l-gkM"/>
+                <viewController nibName="BIDDatePickerViewController" id="ast-aP-Zaz" customClass="BIDDatePickerViewController">
+                    <tabBarItem key="tabBarItem" title="Date" image="clockicon.png" id="gvV-1l-gkM"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <nil key="simulatedDestinationMetrics"/>
                 </viewController>
-                <viewController id="kdG-nT-tMB">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Qin-LG-bBh"/>
+                <viewController nibName="BIDSingleComponentPickerViewController" id="kdG-nT-tMB" customClass="BIDSingleComponentViewController">
+                    <tabBarItem key="tabBarItem" title="Single" image="singleicon.png" id="Qin-LG-bBh"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <nil key="simulatedDestinationMetrics"/>
                 </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ULB-eQ-71I">
-                    <tabBarItem key="tabBarItem" title="Item" id="Byj-2F-1tx"/>
+                <viewController nibName="BIDDoubleComponentPickerViewController" automaticallyAdjustsScrollViewInsets="NO" id="ULB-eQ-71I" customClass="BIDDoubleComponentViewController">
+                    <tabBarItem key="tabBarItem" title="Double" image="doubleicon.png" id="Byj-2F-1tx"/>
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -47,8 +47,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <nil key="simulatedDestinationMetrics"/>
                 </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="DhK-uu-Ys7">
-                    <tabBarItem key="tabBarItem" title="Item" id="y6t-hg-dKu"/>
+                <viewController nibName="BIDDependentComponentPickerViewController" automaticallyAdjustsScrollViewInsets="NO" id="DhK-uu-Ys7" customClass="BIDDependentComponentPickerViewController">
+                    <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon.png" id="y6t-hg-dKu"/>
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -56,8 +56,8 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <nil key="simulatedDestinationMetrics"/>
                 </viewController>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ZZk-Pm-dka">
-                    <tabBarItem key="tabBarItem" title="Item" id="WdG-Yk-7C8"/>
+                <viewController nibName="BIDCustomPickerViewController" automaticallyAdjustsScrollViewInsets="NO" id="ZZk-Pm-dka" customClass="BIDCustomPickerViewController">
+                    <tabBarItem key="tabBarItem" title="Custom" image="toolicon.png" id="WdG-Yk-7C8"/>
                     <toolbarItems/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -68,4 +68,11 @@
             </viewControllers>
         </tabBarController>
     </objects>
+    <resources>
+        <image name="clockicon.png" width="24" height="24"/>
+        <image name="dependenticon.png" width="25" height="24"/>
+        <image name="doubleicon.png" width="25" height="24"/>
+        <image name="singleicon.png" width="25" height="24"/>
+        <image name="toolicon.png" width="24" height="24"/>
+    </resources>
 </document>
