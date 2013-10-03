@@ -24,7 +24,6 @@
 		6304775917FDB712002254D5 /* BIDSingleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304775717FDB712002254D5 /* BIDSingleComponentPickerViewController.m */; };
 		6304775A17FDB712002254D5 /* BIDSingleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304775817FDB712002254D5 /* BIDSingleComponentPickerViewController.xib */; };
 		6304775E17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304775C17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.m */; };
-		6304775F17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304775D17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.xib */; };
 		6304776317FDB74C002254D5 /* BIDDependentComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304776117FDB74C002254D5 /* BIDDependentComponentPickerViewController.m */; };
 		6304776417FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304776217FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib */; };
 		6304776817FDB7C5002254D5 /* BIDCustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6304776617FDB7C5002254D5 /* BIDCustomPickerViewController.m */; };
@@ -41,6 +40,7 @@
 		6304778017FDB81B002254D5 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6304777A17FDB81B002254D5 /* lemon.png */; };
 		6304778117FDB81B002254D5 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 6304777B17FDB81B002254D5 /* seven.png */; };
 		6304778317FDBA10002254D5 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304778217FDBA10002254D5 /* TabBarController.xib */; };
+		638E228A17FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,6 @@
 		6304775817FDB712002254D5 /* BIDSingleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDSingleComponentPickerViewController.xib; sourceTree = "<group>"; };
 		6304775B17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDoubleComponentPickerViewController.h; sourceTree = "<group>"; };
 		6304775C17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDoubleComponentPickerViewController.m; sourceTree = "<group>"; };
-		6304775D17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDoubleComponentPickerViewController.xib; sourceTree = "<group>"; };
 		6304776017FDB74C002254D5 /* BIDDependentComponentPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDDependentComponentPickerViewController.h; sourceTree = "<group>"; };
 		6304776117FDB74C002254D5 /* BIDDependentComponentPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDDependentComponentPickerViewController.m; sourceTree = "<group>"; };
 		6304776217FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDependentComponentPickerViewController.xib; sourceTree = "<group>"; };
@@ -97,6 +96,7 @@
 		6304777A17FDB81B002254D5 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
 		6304777B17FDB81B002254D5 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		6304778217FDBA10002254D5 /* TabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDoubleComponentPickerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +171,7 @@
 				6304776717FDB7C5002254D5 /* BIDCustomPickerViewController.xib */,
 				6304775B17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.h */,
 				6304775C17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.m */,
-				6304775D17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.xib */,
+				638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */,
 				6304776017FDB74C002254D5 /* BIDDependentComponentPickerViewController.h */,
 				6304776117FDB74C002254D5 /* BIDDependentComponentPickerViewController.m */,
 				6304776217FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib */,
@@ -322,7 +322,6 @@
 				6304776417FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib in Resources */,
 				6304777F17FDB81B002254D5 /* crown.png in Resources */,
 				6304775A17FDB712002254D5 /* BIDSingleComponentPickerViewController.xib in Resources */,
-				6304775F17FDB72A002254D5 /* BIDDoubleComponentPickerViewController.xib in Resources */,
 				6304776917FDB7C5002254D5 /* BIDCustomPickerViewController.xib in Resources */,
 				6304775517FDB6DD002254D5 /* BIDDatePickerViewController.xib in Resources */,
 				6304778017FDB81B002254D5 /* lemon.png in Resources */,
@@ -331,6 +330,7 @@
 				6304772D17FDB648002254D5 /* InfoPlist.strings in Resources */,
 				6304777D17FDB81B002254D5 /* bar.png in Resources */,
 				6304778317FDBA10002254D5 /* TabBarController.xib in Resources */,
+				638E228A17FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib in Resources */,
 				6304777C17FDB81B002254D5 /* apple.png in Resources */,
 				6304773517FDB648002254D5 /* Images.xcassets in Resources */,
 			);
@@ -558,6 +558,7 @@
 				6304774D17FDB648002254D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6304774E17FDB648002254D5 /* Build configuration list for PBXNativeTarget "PickersTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +567,7 @@
 				6304775017FDB648002254D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

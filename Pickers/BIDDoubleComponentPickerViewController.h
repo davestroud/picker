@@ -16,8 +16,8 @@
 <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UIPickerView *doublePicker;
-@property (strong, nonatomic) IBOutlet UIPickerView *fillingTypes;
-@property (strong, nonatomic) IBOutlet UIPickerView *breadTypes;
+@property (strong, nonatomic) IBOutlet NSArray *fillingTypes;
+@property (strong, nonatomic) IBOutlet NSArray *breadTypes;
 
 -(IBAction)buttonPressed;
 
