@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#define kFillingComponent 0
+#define kBreadComponent 1
+
 @interface BIDDoubleComponentViewController : UIViewController
+
+<UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UIPickerView *doublePicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *fillingTypes;
+@property (strong, nonatomic) IBOutlet UIPickerView *breadTypes;
+
+-(IBAction)buttonPressed;
 
 @end
