@@ -41,6 +41,7 @@
 		6304778117FDB81B002254D5 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 6304777B17FDB81B002254D5 /* seven.png */; };
 		6304778317FDBA10002254D5 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304778217FDBA10002254D5 /* TabBarController.xib */; };
 		638E228A17FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */; };
+		638E228C17FE3B3C00DDD5F4 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638E228B17FE3B3C00DDD5F4 /* statedictionary.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		6304777B17FDB81B002254D5 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		6304778217FDBA10002254D5 /* TabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
 		638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDoubleComponentPickerViewController.xib; sourceTree = "<group>"; };
+		638E228B17FE3B3C00DDD5F4 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../Downloads/iOS6/07 - Pickers/statedictionary.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		6304772817FDB648002254D5 /* Pickers */ = {
 			isa = PBXGroup;
 			children = (
+				638E228B17FE3B3C00DDD5F4 /* statedictionary.plist */,
 				6304773117FDB648002254D5 /* BIDAppDelegate.h */,
 				6304773217FDB648002254D5 /* BIDAppDelegate.m */,
 				6304773417FDB648002254D5 /* Images.xcassets */,
@@ -324,6 +327,7 @@
 				6304775A17FDB712002254D5 /* BIDSingleComponentPickerViewController.xib in Resources */,
 				6304776917FDB7C5002254D5 /* BIDCustomPickerViewController.xib in Resources */,
 				6304775517FDB6DD002254D5 /* BIDDatePickerViewController.xib in Resources */,
+				638E228C17FE3B3C00DDD5F4 /* statedictionary.plist in Resources */,
 				6304778017FDB81B002254D5 /* lemon.png in Resources */,
 				6304777E17FDB81B002254D5 /* cherry.png in Resources */,
 				6304777017FDB7EE002254D5 /* clockicon.png in Resources */,

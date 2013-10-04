@@ -14,6 +14,23 @@
 
 @implementation BIDDependentComponentPickerViewController
 
+- (IBAction)buttonPressed
+{
+    NSInteger stateRow = [self.dependentPicker selectedRowInComponent:kStateComponent];
+    NSInteger zipRow = [self.dependentPicker selectedRowInComponent:kZipComponent];
+    NSString *state = self.states[stateRow];
+    NSString *zip = self.zips[zipRow];
+    NSString *title = [[NSString alloc]initWithFormat: @"You selected zip code %@.", zip];
+    NSString *message = [[NSString alloc]initWithFormat: @"%@ is in %@", zip, state];
+                         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                         [alert show];
+}
+
+
+
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
