@@ -26,11 +26,6 @@
                          [alert show];
 }
 
-
-
-
-
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -48,7 +43,7 @@
     self.stateZips = [NSDictionary dictionaryWithContentsOfURL:plistURL];
     
     NSArray *allStates = [self.stateZips allKeys];
-    NSArray *sortedStates = [allStates sortedArrayUsingSelector:@selector(compare)];
+    NSArray *sortedStates = [allStates sortedArrayUsingSelector:@selector(compare:)];
     self.states = sortedStates;
     
     NSString *selectedState = self.states[0];
@@ -63,6 +58,7 @@
 
 #pragma mark - 
 #pragma mark Picker Data Source Methods
+
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
     return 2;
@@ -78,6 +74,7 @@
 }
 
 #pragma mark Picker Delegate Methods 
+
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     if (component == kStateComponent) {
