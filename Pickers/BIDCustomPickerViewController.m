@@ -13,7 +13,30 @@
 
 @end
 
-@implementation BIDCustomPickerViewController
+@implementation BIDCustomPickerViewController   {
+    SystemSoundID winSoundID;
+}
+
+-(void)showButton
+{
+    self.button.hidden = NO;
+}
+
+-(void)playWinSound
+{
+    if (winSoundID == 0) {
+        NSURL *soundURL = [[NSBundle mainBundle]URLForResource:@"win" withExtension:@"wav"];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &winSoundID);
+    }
+    AudioServicesPlaySystemSound(winSoundID);
+    self.winLabel.text = @"WINNING!";
+    [self performSelector:@selector(showButton)
+               withObject:nil
+               afterDelay:1.5];
+}
+
+
+
 
 - (IBAction)spin
 {
