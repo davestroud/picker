@@ -20,8 +20,7 @@
     int numInRow = 1;
     int lastVal = -1;
     for (int i = 0; i < 5; i++) {
-        int newValue = random() %
-        [self.images count];
+        int newValue = random() % [self.images count];
         
         if (newValue == lastVal)    {
             numInRow++;
