@@ -15,6 +15,7 @@
 
 @implementation BIDCustomPickerViewController   {
     SystemSoundID winSoundID;
+    SystemSoundID crunchSoundID;
 }
 
 -(void)showButton
@@ -59,13 +60,22 @@
             win = YES;
         }
     }
-    if (win) {
-        self.winLabel.text= @"WIN!";
-    } else {
+    if (crunchSoundID == 0) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"crunch"
+                                                         ofType:@"wav"];
+        NSURL *soundURL = [NSURL fileURLWithPath:path];
+        AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL,
+                                         &crunchSoundID);
+    }
+    AudioServicesPlaySystemSound(crunchSoundID);
+    
+        if (win) {
+            [self performSelector:@selector(playWinSound)
+                       withObject:nil afterDelay:.5];
+        }
+        self.button.hidden = YES;
         self.winLabel.text = @"";
     }
-}
-
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -81,7 +91,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.images = @[[UIImage imageNamed:@"seven"], [UIImage imageNamed:@"bar"], [UIImage imageNamed:@"crown"], [UIImage imageNamed:@"cherry"], [UIImage imageNamed:@"lemon"], [UIImage imageNamed:@"apple"]];
+    self.images = @[[UIImage imageNamed:@"seven"],
+                    [UIImage imageNamed:@"bar"],
+                    [UIImage imageNamed:@"crown"],
+                    [UIImage imageNamed:@"cherry"],
+                    [UIImage imageNamed:@"lemon"],
+                    [UIImage imageNamed:@"apple"]];
    
     srandom(time(NULL));
 }
@@ -105,7 +120,9 @@
 }
 
 #pragma mark Picker Delegate Methods
-- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+- (UIView *)pickerView:(UIPickerView *)pickerView
+            viewForRow:(NSInteger)row
+          forComponent:(NSInteger)component reusingView:(UIView *)view
 {
     UIImage *image = self.images[row];
     UIImageView *imageView = [[UIImageView alloc]initWithImage:image];

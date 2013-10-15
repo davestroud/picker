@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface BIDCustomPickerViewController : UIViewController
-<UIPickerViewAccessibilityDelegate>
+<UIPickerViewDataSource, UIPickerViewDelegate>
+
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @property (strong, nonatomic) IBOutlet UILabel *winLabel;
 @property (strong, nonatomic) NSArray *images;
