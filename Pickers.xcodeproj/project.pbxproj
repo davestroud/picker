@@ -40,6 +40,8 @@
 		6304778017FDB81B002254D5 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6304777A17FDB81B002254D5 /* lemon.png */; };
 		6304778117FDB81B002254D5 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 6304777B17FDB81B002254D5 /* seven.png */; };
 		6304778317FDBA10002254D5 /* TabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6304778217FDBA10002254D5 /* TabBarController.xib */; };
+		63393E90180DBBB2003A1F29 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63393E8E180DBBB2003A1F29 /* crunch.wav */; };
+		63393E91180DBBB2003A1F29 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 63393E8F180DBBB2003A1F29 /* win.wav */; };
 		638E228A17FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */; };
 		638E228C17FE3B3C00DDD5F4 /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 638E228B17FE3B3C00DDD5F4 /* statedictionary.plist */; };
 /* End PBXBuildFile section */
@@ -97,6 +99,8 @@
 		6304777A17FDB81B002254D5 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
 		6304777B17FDB81B002254D5 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		6304778217FDBA10002254D5 /* TabBarController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBarController.xib; sourceTree = "<group>"; };
+		63393E8E180DBBB2003A1F29 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
+		63393E8F180DBBB2003A1F29 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
 		638E228917FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDDoubleComponentPickerViewController.xib; sourceTree = "<group>"; };
 		638E228B17FE3B3C00DDD5F4 /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = statedictionary.plist; path = "../../../Downloads/iOS6/07 - Pickers/statedictionary.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +182,7 @@
 				6304776517FDB7C5002254D5 /* BIDCustomPickerViewController.h */,
 				6304776617FDB7C5002254D5 /* BIDCustomPickerViewController.m */,
 				6304776717FDB7C5002254D5 /* BIDCustomPickerViewController.xib */,
+				63393E8D180DBBB2003A1F29 /* Custom Picker Sounds  */,
 				6304776A17FDB7EE002254D5 /* Tab Bar Icons */,
 				6304777517FDB81B002254D5 /* Custom Picker Images */,
 				6304778217FDBA10002254D5 /* TabBarController.xib */,
@@ -239,6 +244,16 @@
 			);
 			name = "Custom Picker Images";
 			path = "../../../Downloads/iOS6/07 - Pickers/Custom Picker Images";
+			sourceTree = "<group>";
+		};
+		63393E8D180DBBB2003A1F29 /* Custom Picker Sounds  */ = {
+			isa = PBXGroup;
+			children = (
+				63393E8E180DBBB2003A1F29 /* crunch.wav */,
+				63393E8F180DBBB2003A1F29 /* win.wav */,
+			);
+			name = "Custom Picker Sounds ";
+			path = "../../../Downloads/iOS6/07 - Pickers/Custom Picker Sounds copy";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -321,6 +336,7 @@
 				6304778117FDB81B002254D5 /* seven.png in Resources */,
 				6304777317FDB7EE002254D5 /* singleicon.png in Resources */,
 				6304777417FDB7EE002254D5 /* toolicon.png in Resources */,
+				63393E90180DBBB2003A1F29 /* crunch.wav in Resources */,
 				6304777217FDB7EE002254D5 /* doubleicon.png in Resources */,
 				6304776417FDB74C002254D5 /* BIDDependentComponentPickerViewController.xib in Resources */,
 				6304777F17FDB81B002254D5 /* crown.png in Resources */,
@@ -333,6 +349,7 @@
 				6304777017FDB7EE002254D5 /* clockicon.png in Resources */,
 				6304772D17FDB648002254D5 /* InfoPlist.strings in Resources */,
 				6304777D17FDB81B002254D5 /* bar.png in Resources */,
+				63393E91180DBBB2003A1F29 /* win.wav in Resources */,
 				6304778317FDBA10002254D5 /* TabBarController.xib in Resources */,
 				638E228A17FE35C000DDD5F4 /* BIDDoubleComponentPickerViewController.xib in Resources */,
 				6304777C17FDB81B002254D5 /* apple.png in Resources */,

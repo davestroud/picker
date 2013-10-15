@@ -6,6 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BIDCustomPickerViewController">
             <connections>
+                <outlet property="button" destination="Vc9-eg-r2Q" id="w1m-h9-yr9"/>
                 <outlet property="picker" destination="7TY-gV-TYX" id="oAc-ht-DlQ"/>
                 <outlet property="view" destination="1" id="6bg-Re-Cgw"/>
                 <outlet property="winLabel" destination="ftb-xC-5fV" id="qtw-25-Cur"/>

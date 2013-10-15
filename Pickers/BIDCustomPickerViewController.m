@@ -7,6 +7,7 @@
 //
 
 #import "BIDCustomPickerViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface BIDCustomPickerViewController ()
 
