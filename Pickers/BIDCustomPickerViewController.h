@@ -12,7 +12,7 @@
 <UIPickerViewAccessibilityDelegate>
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @property (strong, nonatomic) IBOutlet UILabel *winLabel;
-@property (strong, nonatomic) IBOutlet NSArray *images;
+@property (strong, nonatomic) NSArray *images;
 
 - (IBAction)spin;
 @end
