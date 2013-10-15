@@ -69,4 +69,25 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - 
+#pragma mark Picker Data Source Methods
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 5;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return [self.images count];
+}
+
+#pragma mark Picker Delegate Methods
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view
+{
+    UIImage *image = self.images[row];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:image];
+    return imageView;
+}
+
+
 @end
