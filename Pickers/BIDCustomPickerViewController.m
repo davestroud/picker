@@ -47,13 +47,13 @@
     for (int i = 0; i < 5; i++) {
         int newValue = random() % [self.images count];
         
-        if (newValue == lastVal)    {
+        if (newValue == lastVal) {
             numInRow++;
         } else {
             numInRow = 1;
         }
-        lastVal = newValue;
         
+        lastVal = newValue;
         [self.picker selectRow:newValue inComponent:i animated:YES];
         [self.picker reloadComponent:i];
         if (numInRow >= 3) {
